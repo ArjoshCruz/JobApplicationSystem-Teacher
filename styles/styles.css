@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+    background-color: #e6e6e6;
+}
+
+/* Header */
+header {
+    background-color: #033669;
+}
+
+header h1 {
+    color: #edde79;
+    text-align: center;
+    font-size: 50px;
+
+    padding: 30px;
+}
+
+/* General form styles */
+.form-div {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.application-form h2 {
+    text-align: center;
+    margin: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.text, .email, .number, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.submit-form, .clear-form {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-form:hover{
+    background-color: #45a049;
+}
+
+.clear-form {
+    background-color: #f44336;
+}
+
+.clear-form:hover {
+    background-color: #e53935;
+}
+
+.submit-form:focus, .clear-form:focus {
+    outline: none;
+}
+
+.form-btn {
+    text-align: end;
+}
+
+/* Message Box */
+.status-message {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+hr {
+    margin: 20px;
+}
+
+/* Search */
+/* Form Layout */
+.search-form {
+    margin: 20px 0 0 50px; 
+    display: flex; 
+    align-items: center;
+}
+
+.search-form h3 {
+    margin: 0 15px 0 0; /* Space between label and search bar */
+    font-size: 16px;
+}
+
+/* Search Bar Styling */
+.search-bar-container {
+    position: relative;
+    width: 220px; /* Adjusted width for icons and padding */
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px 35px 8px 30px; /* Room for icons */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Icons Styling */
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+}
+
+.clear-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.clear-icon:hover {
+    color: #333;
+}
+
+.search-form input[type="submit"],
+.search-form input[type="button"] {
+    padding: 8px 15px;
+    background-color: #033669;
+    color: #edde79;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.search-form input[type="submit"]:hover,
+.search-form input[type="button"]:hover {
+    background-color: #0056b3; /* Hover effect */
+}
+
+
+/* Table */
+.table-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 95%;
+    margin-top: 50px;
+}
+
+th {
+    text-align: start;
+    border-bottom: 1px solid black;
+
+    padding-bottom: 10px ;
+}
+
+td {
+    font-weight: 300;
+    padding: 8px 0;
+}
+
+.no-results {
+    text-align: center;
+    font-weight: 400;
+    color: #888;
+    padding: 20px 0;
+}
+
+/* Action */
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.edit {
+    background-color: #545454;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+
+    transition: background-color 0.3s ease;
+}
+
+.edit:hover {
+    background-color: #272727;
+}
+
+.delete {
+    background-color: #e53935;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+
+    transition: background-color 0.3s ease;
+}
+
+.delete:hover {
+    background-color: #922725;
+}
+
+/* Edit / Delete Text */
+.main-text {
+    text-align: center;
+    font-size: 36px;
+    margin: 40px 0;
+}
+
+/* Back Button */
+.button-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.back-btn {
+    padding: 14px 70px;
+    background-color: #033669;
+    color: #edde79;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.back-btn:hover {
+    background-color: #031f3a;
+    color: #edde79;
+}
+
+/* Delete */
+.center {
+    text-align: center;
+}
+
+.delete-btn {
+    background-color: #e53935;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+
+    padding: 16px 32px;
+}
+
+.delete-form {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
